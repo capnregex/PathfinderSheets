@@ -5,7 +5,12 @@ gem 'rails', '3.0.0.rc'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :require => 'sqlite3'
+# gem 'sqlite3-ruby', :require => 'sqlite3'
+gem 'pg'
+gem 'devise'
+gem 'rack-openid'
+gem 'devise_openid_authenticatable'
+gem 'ruby-openid-apps-discovery'
 
 # Use unicorn as the web server
 # gem 'unicorn'
