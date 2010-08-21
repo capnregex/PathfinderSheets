@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @character.name %>
+</p>
+
+<p>
+  <b>Str:</b>
+  <%= @character.str %>
+</p>
+
+<p>
+  <b>Dex:</b>
+  <%= @character.dex %>
+</p>
+
+<p>
+  <b>Con:</b>
+  <%= @character.con %>
+</p>
+
+<p>
+  <b>Int:</b>
+  <%= @character.int %>
+</p>
+
+<p>
+  <b>Wis:</b>
+  <%= @character.wis %>
+</p>
+
+<p>
+  <b>Cha:</b>
+  <%= @character.cha %>
+</p>
+
+
+<%= link_to 'Edit', edit_character_path(@character) %> |
+<%= link_to 'Back', characters_path %>

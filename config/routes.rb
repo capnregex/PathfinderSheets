@@ -1,4 +1,6 @@
 PathfinderSheets::Application.routes.draw do
+  resources :characters
+
   devise_for :users
 
   # The priority is based upon order of creation:
