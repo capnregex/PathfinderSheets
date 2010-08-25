@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(:version => 20100821001441) do
 
   create_table "characters", :force => true do |t|
+    t.integer  "user_id"
     t.string   "name"
     t.integer  "str"
     t.integer  "dex"

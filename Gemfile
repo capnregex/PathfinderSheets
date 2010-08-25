@@ -8,9 +8,12 @@ gem 'rails', '3.0.0.rc'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 gem 'pg'
 gem 'devise'
+gem 'ruby-openid'
 gem 'rack-openid'
-gem 'devise_openid_authenticatable'
+gem 'devise_openid_authenticatable', :git => "git://github.com/nbudin/devise_openid_authenticatable.git"
 gem 'ruby-openid-apps-discovery'
+gem "devise_ldap_authenticatable", "0.4.4"
+#gem "devise_ldap_authenticatable", :git => "git://github.com/cschiewek/devise_ldap_authenticatable.git"
 
 # Use unicorn as the web server
 # gem 'unicorn'

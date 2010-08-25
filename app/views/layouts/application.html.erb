@@ -7,8 +7,15 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
+<div id="header">
+  <ul class="hmenu">
+    <%= render 'devise/menu/registration_items' %>
+    <%= render 'devise/menu/login_items' %>
+  </ul>
+<div id="title">Pathfinder Sheets</div>
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
+</div>
 <%= yield %>
 </body>
 </html>

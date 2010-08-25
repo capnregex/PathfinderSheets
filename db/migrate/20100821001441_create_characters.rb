@@ -1,6 +1,7 @@
 class CreateCharacters < ActiveRecord::Migration
   def self.up
     create_table :characters do |t|
+      t.references :user
       t.string :name
       t.integer :str
       t.integer :dex
