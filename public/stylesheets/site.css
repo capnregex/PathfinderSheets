@@ -1,0 +1,28 @@
+
+#header {
+  position:relative;
+  right:-10px;
+  left:-10px;
+  padding: 5px 10px;
+  border-bottom: solid 1px #000;
+}
+
+#title {
+  font-size: 3em;
+  font-family:serif;
+  font-style:italic;
+}
+
+ul.hmenu {
+  position:absolute;
+  top:0;
+  right:0;
+  list-style: none;	
+  margin: 0 0 2em;
+  padding: 0;
+}
+
+ul.hmenu li {
+  display: inline;  
+}
+
