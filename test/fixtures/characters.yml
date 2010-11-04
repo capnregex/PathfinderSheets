@@ -1,19 +1,31 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
+  user: 
   name: MyString
-  str: 1
-  dex: 1
-  con: 1
-  int: 1
-  wis: 1
-  cha: 1
+  campaign: 
+  race: 
+  cclass: 
+  alignment: 
+  size: 
+  age: 1
+  gender: 
+  height: 1
+  weight: 1
+  eye_color: MyString
+  hair_color: MyString
 
 two:
+  user: 
   name: MyString
-  str: 1
-  dex: 1
-  con: 1
-  int: 1
-  wis: 1
-  cha: 1
+  campaign: 
+  race: 
+  cclass: 
+  alignment: 
+  size: 
+  age: 1
+  gender: 
+  height: 1
+  weight: 1
+  eye_color: MyString
+  hair_color: MyString

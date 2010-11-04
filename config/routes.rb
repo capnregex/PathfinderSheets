@@ -1,4 +1,9 @@
 PathfinderSheets::Application.routes.draw do
+  resources :terms, :only => [:index, :show]
+  resources :ability_scores, :only => [:index, :show]
+  resources :abilities, :only => [:index, :show]
+  resources :campaigns
+
   # get "welcome/index"
 
   resources :characters

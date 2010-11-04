@@ -2,13 +2,19 @@
 
 <table>
   <tr>
+    <th>User</th>
     <th>Name</th>
-    <th>Str</th>
-    <th>Dex</th>
-    <th>Con</th>
-    <th>Int</th>
-    <th>Wis</th>
-    <th>Cha</th>
+    <th>Campaign</th>
+    <th>Race</th>
+    <th>Cclass</th>
+    <th>Alignment</th>
+    <th>Size</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Height</th>
+    <th>Weight</th>
+    <th>Eye color</th>
+    <th>Hair color</th>
     <th></th>
     <th></th>
     <th></th>
@@ -16,13 +22,19 @@
 
 <% @characters.each do |character| %>
   <tr>
+    <td><%= character.user %></td>
     <td><%= character.name %></td>
-    <td><%= character.str %></td>
-    <td><%= character.dex %></td>
-    <td><%= character.con %></td>
-    <td><%= character.int %></td>
-    <td><%= character.wis %></td>
-    <td><%= character.cha %></td>
+    <td><%= character.campaign %></td>
+    <td><%= character.race %></td>
+    <td><%= character.cclass %></td>
+    <td><%= character.alignment %></td>
+    <td><%= character.size %></td>
+    <td><%= character.age %></td>
+    <td><%= character.gender %></td>
+    <td><%= character.height %></td>
+    <td><%= character.weight %></td>
+    <td><%= character.eye_color %></td>
+    <td><%= character.hair_color %></td>
     <td><%= link_to 'Show', character %></td>
     <td><%= link_to 'Edit', edit_character_path(character) %></td>
     <td><%= link_to 'Destroy', character, :confirm => 'Are you sure?', :method => :delete %></td>

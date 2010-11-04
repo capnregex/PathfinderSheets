@@ -10,20 +10,56 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101104191045) do
+ActiveRecord::Schema.define(:version => 20101104202837) do
+
+  create_table "abilities", :force => true do |t|
+    t.string "name",        :limit => 20
+    t.string "abrev",       :limit => 3
+    t.text   "description"
+  end
+
+  add_index "abilities", ["abrev"], :name => "index_abilities_on_abrev"
+  add_index "abilities", ["id"], :name => "index_abilities_on_id"
+  add_index "abilities", ["name"], :name => "index_abilities_on_name"
+
+  create_table "campaigns", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "characters", :force => true do |t|
     t.integer  "user_id"
     t.string   "name"
-    t.integer  "str"
-    t.integer  "dex"
-    t.integer  "con"
-    t.integer  "int"
-    t.integer  "wis"
-    t.integer  "cha"
+    t.integer  "campaign_id"
+    t.integer  "race_id"
+    t.integer  "cclass_id"
+    t.integer  "alignment_id"
+    t.integer  "size_id"
+    t.integer  "gender_id"
+    t.integer  "height"
+    t.integer  "weight"
+    t.string   "eye_color"
+    t.string   "hair_color"
+    t.integer  "age"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "terms", :id => false, :force => true do |t|
+    t.string   "id"
+    t.string   "name"
+    t.string   "abrev"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "terms", ["abrev"], :name => "index_terms_on_abrev"
+  add_index "terms", ["id"], :name => "index_terms_on_id"
+  add_index "terms", ["name"], :name => "index_terms_on_name"
 
   create_table "users", :force => true do |t|
     t.string   "email",                               :default => "", :null => false

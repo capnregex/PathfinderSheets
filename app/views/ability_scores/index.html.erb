@@ -1,0 +1,24 @@
+<h1>Listing ability_scores</h1>
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Points</th>
+    <th>Modifier</th>
+    <% 10.times do |i| %>
+      <th><%= i %></th>
+    <% end %>
+  </tr>
+
+<% @ability_scores.each do |ability_score| %>
+  <tr>
+    <td><%= ability_score.id %></td>
+    <td><%= ability_score.points %></td>
+    <td><%= ability_score.modifier %></td>
+    <% ability_score.bonus_spells.each do |bs| %>
+      <td><%= bs %></td>
+    <% end %>
+  </tr>
+<% end %>
+</table>
+
