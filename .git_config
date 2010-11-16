@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	url = git@github.com:capnregex/PathfinderSheets.git
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[remote "heroku"]
+	url = git@heroku.com:pathfindersheets.git
+	fetch = +refs/heads/*:refs/remotes/heroku/*
